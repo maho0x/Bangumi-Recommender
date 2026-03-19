@@ -1,6 +1,6 @@
 # Bangumi Recommender
 
-基于 [bangumi15M](https://github.com/lyqcom/Bangumi15M) 数据集构建的番组计划（bgm.tv）个性化推荐系统，采用多阶段混合架构：协同过滤（Multi-VAE）+ 内容嵌入（LLM Embedding）+ 混合融合排名。
+基于 [bangumi15M](https://bgm.tv/group/topic/381529) 数据集构建的番组计划（bgm.tv）个性化推荐系统，采用多阶段混合架构：协同过滤（Multi-VAE）+ 内容嵌入（LLM Embedding）+ 混合融合排名。
 
 ![demo](docs/demo.png)
 
@@ -63,7 +63,7 @@
 
 | 数据集 | 来源 | 描述 |
 |---|---|---|
-| bangumi15M | [lyqcom/Bangumi15M](https://github.com/lyqcom/Bangumi15M) | 1520 万条匿名交互，43.4 万条目元数据 |
+| bangumi15M | [bgm.tv/group/topic/381529](https://bgm.tv/group/topic/381529) | 1520 万条匿名交互，43.4 万条目元数据 |
 | Bangumi Archive | [bangumi/archive](https://github.com/bangumi/archive) | 每周全量 Wiki 导出（含简介、标签） |
 
 ---
@@ -145,7 +145,7 @@ pip install -r requirements.txt
 
 **bangumi15M 数据集**（放到 `bangumi15M_data/raw_data/`）：
 
-从 [bangumi15M releases](https://github.com/lyqcom/Bangumi15M/releases) 下载，解压后应有：
+从 [bangumi15M](https://bgm.tv/group/topic/381529) 获取数据，解压后应有：
 - `AnonymousUserCollection.csv`
 - `Subjects.csv`
 
@@ -301,7 +301,7 @@ CACHE_TTL_USER_COLLECTION = 3600  # 用户收藏缓存 TTL（秒）
 
 ## 致谢
 
-- [bangumi15M](https://github.com/lyqcom/Bangumi15M) — 训练数据集
+- [bangumi15M](https://bgm.tv/group/topic/381529) — 训练数据集
 - [Bangumi Archive](https://github.com/bangumi/archive) — 条目 Wiki 数据
 - [bgm.tv API](https://bgm.tv/wiki/api) — 实时用户数据
 - [Nebius AI Studio](https://studio.nebius.ai/) — Qwen3 嵌入 API
