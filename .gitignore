@@ -1,0 +1,39 @@
+# ===== Large data files (not tracked in git) =====
+data/
+bangumi15M_data/
+bangumi15M.zip
+dump-*.zip
+*.zip
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Node / Frontend =====
+frontend/node_modules/
+frontend/dist/
+
+# ===== IDE =====
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Secrets =====
+.env
+.env.*
+secrets.py
